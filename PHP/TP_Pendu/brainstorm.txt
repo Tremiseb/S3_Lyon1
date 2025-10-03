@@ -1,0 +1,57 @@
+Header et footer en commun à toute les pages
+
+header.php
+<html>
+	<body>
+	<?php session_start() ;?>
+		<header>
+
+
+accueil.php
+<?php require_once "header.php"?>;
+<div>
+	<p>Bienvenue</p>
+</div>
+<?php require_once "footer.php"?>;
+
+
+footer.php
+		<footer>
+		</footer>
+	</body>
+</html>
+
+0 Premiere page --> Accueil : 
+Affichage de l'historique des parties LIMIT 5
+Btn : Nouvelle partie
+Btn : Quitter
+
+if Nouvelle partie
+Deuxieme page --> Choix mot & difficulté: 
+
+1er form SESSION
+Input(text) : nomJoueur1
+Input(text) : nomJoueur2
+Input (liste déroulante ?) : le nombre de fautes (difficultés)
+==> Redirection si tout est correct
+
+2eme form SESSION
+Input : Joueur 1 sélectionne le mot
+test si la 
+
+3eme page
+Début de la partie 
+Troisième page --> page de jeu
+Input joueur 2 (Lettre ou Mot) --> test si la lettre est contenue dans le mot
+if La lettre n'est pas contenu dans le mot
+==> La lettre n'est pas contenu dans le mot
+==> Nombre d'essais restants
+else
+==> La lettre est contenu dans le mot
+
+Stocker la lettre saisie par l'utilisateur SESSION
+Condition de fin soit le mot est trouvé soit le nombre d'essai a été atteint
+
+4eme page --> Final
+Message de victoire de tel utilisateur
+--> Sauvegarde
